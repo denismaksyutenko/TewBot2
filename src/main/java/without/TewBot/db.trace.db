@@ -1,0 +1,10 @@
+2023-05-18 16:50:20 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO [*]'WORDS_AND_TRANSLATE' ('ID','ENGLISH_WORDS','UKRAINIAN_WORDS')\000d\000aVALUES ('4','water', 'вода' )"; ожидалось "identifier"
+Syntax error in SQL statement "INSERT INTO [*]'WORDS_AND_TRANSLATE' ('ID','ENGLISH_WORDS','UKRAINIAN_WORDS')\000d\000aVALUES ('4','water', 'вода' )"; expected "identifier"; SQL statement:
+INSERT INTO 'WORDS_AND_TRANSLATE' ('ID','ENGLISH_WORDS','UKRAINIAN_WORDS')
+VALUES ('4','water', 'вода' ) [42001-214]
+2023-05-18 16:51:18 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO WORDS_AND_TRANSLATE (ID,ENGLISH_WORDS,UKRAINIAN_WORDS')\000d\000aVALUES (4,'water', 'вода[*]' );"
+Syntax error in SQL statement "INSERT INTO WORDS_AND_TRANSLATE (ID,ENGLISH_WORDS,UKRAINIAN_WORDS')\000d\000aVALUES (4,'water', 'вода[*]' );"; SQL statement:
+INSERT INTO WORDS_AND_TRANSLATE (ID,ENGLISH_WORDS,UKRAINIAN_WORDS')
+VALUES (4,'water', 'вода' ); [42000-214]
